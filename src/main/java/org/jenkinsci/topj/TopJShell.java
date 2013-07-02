@@ -45,6 +45,7 @@ public class TopJShell extends Shell {
     
     @Override
     public boolean prebuild(Build build, BuildListener listener) {
+        /*
         listener.getLogger().println("=================== Preparing J Script ===================");
         EnvVars envs = new EnvVars();
         try {
@@ -82,8 +83,10 @@ public class TopJShell extends Shell {
             Logger.getLogger(TopJShell.class.getName()).log(Level.SEVERE, null, ex);
         }
         */
+        /*
         build.getActions().add(new TopJShellAction(envs));
         listener.getLogger().println("=================== Done J Script ===================");
+        */
         return true;
     }
 
